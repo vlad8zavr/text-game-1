@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ver.4</title>
+     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	   <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <p class="head-name"><strong>Escape the island!</strong></p>
+
+      <!-- START & RESTART GAME BUTTON -->
+      <div class="row">
+        <div class="col-12">
+          <!-- START GAME BTN -->
+          <div class="startBtnDiv" id="startBtnDiv">
+            <input type="button" class="startButton" id="startButton" value="Start Game" />
+          </div>
+          <!-- ./div - startBtnDiv -->
+          <!-- ReSTART GAME BTN -->
+          <div class="restartBtnDiv" id="restartBtnDiv">
+            <input type="button" class="startButton" id="restartButton" value="Restart Game" />
+          </div>
+          <!-- ./div - restartBtnDiv -->
+        </div>
+      </div>
+
+      <div class="mainField" id="mainField">
+        <div class="row">
+
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-12">
+                <div class="displayMap">
+                  <p class="invent-name"><strong>Map</strong></p>
+                  <hr>
+                  <table align="center" class="mapTable">
+                    <tr><td></td><td class="hideMapCell">sailor</td><td class="hideMapCell">coast</td></tr>
+                    <tr><td class="hideMapCell">barn</td><td class="hideMapCell">clearing</td><td class="hideMapCell">garden</td></tr>
+                    <tr><td class="hideMapCell">bridge</td><td class="currentLocationMap">grove</td><td class="hideMapCell">house</td></tr>
+                    <tr><td class="hideMapCell">cave</td><td></td><td></td></tr>
+                  </table>
+                </div>
+              </div>
+              <!-- ./div - map displayMap -->
+              <div class="col-12 col-sm-6 col-md-12">
+                <div class="displayInventory">
+                  <p class="invent-name"><strong>Inventory</strong></p>
+                  <hr>
+                </div>
+              </div>
+              <!-- ./div - inventory displayInventory -->
+            </div>
+            <!-- ./row -->
+          </div>
+          <!-- ./col - inventory & map -->
+
+          <div class="col-12 col-sm-12 col-md-8 col-lg-8" id="gamescroll">
+            <div class="row">
+              <div class="col-6">
+                <div class='game-input'>
+                  <input id="user-input" class="user-input" placeholder="Please type your command...">
+                  </input>
+                </div>
+              </div>
+              <!-- ./div - game-input -->
+              <div class="col-6">
+                <div class="helpBtnDiv">
+                  <input type="button" class="heplButton" id="helpButton" value="Show Help" />
+                </div>
+                <!-- ./div - helpBtnDiv -->
+              </div>
+              <!-- ./div - help-button -->
+            </div>
+            <!-- ./row - input & help button -->
+            <div class="row">
+              <div class="col-12">
+                <div class="helpContent" id="helpContent">
+                  Find the way to leave the island.</br>
+                  Here are the possible commands: </br>
+                  <ul>
+                    <li>north / south / east / west</li>
+                    <li>search</li>
+                    <li>pickup</li>
+                    <li>use</li>
+                    <li>say</li>
+                  </ul>
+                </div>
+                <!-- ./div - helpContent -->
+              </div>
+              <!-- ./col - helpContent -->
+            </div>
+            <!-- ./row - helpContent -->
+
+
+            <div id='game-text' class='game-text'>
+            </div>
+            <!-- ./div - game-text -->
+          </div>
+          <!-- ./col - game-text -->
+
+        </div>
+        <!-- ./row -->
+      </div>
+      <!-- ./mainField -->
+
+
+  </div>
+  <!-- ./container -->
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+
+
+  </body>
+</html>
